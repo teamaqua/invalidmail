@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,31 +16,32 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Invalid Mail</h1>
-        <p>Stores regular expressions to detect invalid email addresses.</p>
-
-        <p class="view"><a href="https://github.com/teamaqua/invalidmail">View the Project on GitHub <small>teamaqua/invalidmail</small></a></p>
-
+        <h1 class="header">Invalid Mail</h1>
+        <p class="header">Stores regular expressions to detect invalid email addresses.</p>
 
         <ul>
-          <li><a href="https://github.com/teamaqua/invalidmail/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/teamaqua/invalidmail/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/teamaqua/invalidmail">View On <strong>GitHub</strong></a></li>
+          <li class="download"><a class="buttons" href="https://github.com/teamaqua/invalidmail/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/teamaqua/invalidmail/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/teamaqua/invalidmail">View On GitHub</a></li>
         </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/teamaqua">teamaqua</a></p>
+
+
       </header>
       <section>
         <h1>Email Validation</h1>
 
 <p>This page stores regular expressions for email validation.</p>
 
-<h2>jQuery Validation</h2>
+<h1>jQuery Validation</h1>
 
 <p>Utilized by the JQuery validation plugin to validate email addresses:</p>
 
 <pre><code>/^((([a-z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i
 </code></pre>
 
-<h2>HTML5 Compliant</h2>
+<h1>HTML5 Compliant</h1>
 
 <p>This regex is supplied by the W3C's HTML5 spec:</p>
 
@@ -48,14 +50,14 @@
 
 <p>Citation: <a href="http://www.w3.org/TR/2012/CR-html5-20121217/forms.html#valid-e-mail-address">http://www.w3.org/TR/2012/CR-html5-20121217/forms.html#valid-e-mail-address</a></p>
 
-<h2>ASP.Net RegularExpressionValidator</h2>
+<h1>ASP.Net RegularExpressionValidator</h1>
 
 <p>This is the regex used by ASP.Net's RegularExpressionValidator service. It matches most email addresses, but not IPv6 nor first level address (for instance, example@uk).</p>
 
 <pre><code>\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*
 </code></pre>
 
-<h2>Thorough validation</h2>
+<h1>Thorough validation</h1>
 
 <p>To (mostly) validate email addresses against RFC 822, use the expression compiled by the Perl  Mail::RFC822::Address module:</p>
 
@@ -146,11 +148,10 @@ r\\]|\\.)*\](?:(?:\r\n)?[ \t])*)(?:\.(?:(?:\r\n)?[ \t])*(?:[^()&lt;&gt;@,;:\\".\
 <p>Updated April 1, 2013</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/teamaqua">teamaqua</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
